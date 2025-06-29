@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* background-image: url("https://img.pikbest.com/wp/202344/night-sky-stars-background-starry-a-colorful-outer-space-with-star-field-texture_9906094.jpg!sw800"); */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    height:200px;
+    width: 200px;
+    /* background-color: yellow; */
+}
+.mercury{
+    height: 300px;
+    width: 300px;
+    
+    /* background-color: violet;*/
+} 
+.venus{
+    height: 400px;
+    width: 400px;
+    /* background-color: pink; */
+}
+.earth{
+    height: 500px;
+    width: 500px;
+    /* background-color: blue;*/
+} 
+.mars{
+    height: 650px;
+    width: 650px;
+    /* background-color: red; */
+}
+.jupiter{
+    /* background-color: orange; */
+    height: 750px;
+    width: 750px;
+}
+.saturn{
+    height:850px;
+    width: 850px;
+    /* background-color: magenta; */
+}
+.uranus{
+    height: 950px;
+    width: 950px;
+    /* background-color: green; */
+}
+.neptune{
+    height: 1050px;
+    width: 1050px;
+    /* background-color: purple; */
+}
+.pluto{
+    height: 1150px;
+    width: 1150px;
+    /* background-color: grey; */
+}
+
+
+.earth,.jupiter,.mars,.mercury,.venus,.uranus,.sun,.neptune,.saturn{
+    border-color: white;
+    border-style:dashed;
+    border-width: 0.01rem;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pluto{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.earth  p,.mars  p,.jupiter p,.venus p,.uranus p,.saturn p,.neptune p,.pluto p,.mercury p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background-color: black; */
+    font-size: 1.5rem;
+}
+.sun > img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    position:absolute;
+}
+.mercury > img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    background-color: violet;
+    border-radius: 50%;
+    animation: mercury 3s linear 1s infinite;
+    position:absolute;
+    
+} 
+.mercury p{
+    animation: mercuryp 3s linear 1.5s infinite;
+} 
+.venus img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    /* position:absolute; */
+    animation: venus 4s linear 1s infinite ;
+} 
+.venus p{
+    
+    animation: venusp 4s linear 1.5s infinite;
+} 
+.earth img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70px;
+    width: 70px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position:absolute;
+    animation: earth 5s linear 1s infinite;
+} 
+
+.earth p{
+    animation: earthp 5s linear 1.5s infinite;
+}
+.jupiter img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:90px;
+    width: 90px;
+     /* background-color: orange; */
+    border-radius: 50%;
+    position:absolute;
+    animation: jupiter 7s linear 1s infinite;
+} 
+.jupiter p{
+    animation: jupiterp 7s linear 1.5s infinite;
+}
+.mars img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    animation: mars 6s linear 1s infinite;
+} 
+.mars p{
+    animation: marsp 6s linear 1.5s infinite;
+} 
+
+.saturn img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60px;
+    width: 60px;
+    background-color: magenta;
+    border-radius: 50%;
+    position:absolute;
+    animation: saturn 8s linear 1s infinite;
+} 
+.saturn p{
+    animation: saturnp 8s linear 1.5s infinite;
+} 
+.uranus img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+     background-color: green;
+    border-radius: 50%;
+    position:absolute;
+    animation: uranus 9s linear 1s infinite;
+} 
+.uranus p{
+    animation: uranusp 9s linear 1.5s infinite;
+} 
+.neptune img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 50%;
+    position:absolute;
+    animation: neptune 10s linear 1s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+} 
+.neptune p{
+    animation: neptunep 10s linear 1.5s infinite;
+} 
+.pluto img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    position:absolute;
+    animation: pluto 11s linear 1s infinite;
+} 
+.pluto p{
+    
+    animation: plutop 11s linear 1.5s infinite;
+} 
+
+@keyframes mercury{
+    from{
+        transform: rotate(0deg) translate(100px) ;
+    }
+    to{
+        transform: rotate(360deg) translate(100px) ;
+    }
+}
+@keyframes mercuryp{
+    from{
+        transform: rotate(0deg) translate(100px)  rotate(0deg );
+    }
+    to{
+        transform: rotate(360deg) translate(100px) rotate(-360deg);
+    }
+}
+@keyframes venus{
+    from{
+        transform: rotate(0deg) translate(150px)  ;
+    }
+    to{
+        transform: rotate(360deg) translate(150px) ;
+    }
+}
+@keyframes venusp{
+    from{
+        transform: rotate(0deg) translate(150px)  rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+@keyframes earth{
+    from{
+        transform: rotate(0deg) translate(200px);
+    }
+    to{
+        transform: rotate(360deg) translate(200px) ;
+    }
+}
+@keyframes earthp{
+    from{
+        transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+}
+@keyframes mars{
+    from{
+        transform: rotate(0deg) translate(250px);
+    }
+    to{
+        transform: rotate(360deg) translate(250px) ;
+    }
+}
+@keyframes marsp{
+    from{
+        transform: rotate(0deg) translate(250px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(250px) rotate(-360deg);
+    }
+}
+@keyframes jupiter{
+    from{
+        transform: rotate(0deg) translate(325px);
+    }
+    to{
+        transform: rotate(360deg) translate(325px) ;
+    }
+}
+@keyframes jupiterp{
+    from{
+        transform: rotate(0deg) translate(325px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(325px) rotate(-360deg);
+    }
+}
+@keyframes saturn{
+    from{
+        transform: rotate(0deg) translate(375px);
+    }
+    to{
+        transform: rotate(360deg) translate(375px) ;
+    }
+}
+@keyframes saturnp{
+    from{
+        transform: rotate(0deg) translate(375px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(375px) rotate(-360deg);
+    }
+}
+@keyframes uranus{
+    from{
+        transform: rotate(0deg) translate(425px);
+    }
+    to{
+        transform: rotate(360deg) translate(425px) ;
+    }
+}
+@keyframes uranusp{
+    from{
+        transform: rotate(0deg) translate(425px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(425px) rotate(-360deg);
+    }
+}
+@keyframes neptune{
+    from{
+        transform: rotate(0deg) translate(475px);
+    }
+    to{
+        transform: rotate(360deg) translate(475px) ;
+    }
+
+}
+@keyframes neptunep{
+    from{
+        transform: rotate(0deg) translate(475px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(475px) rotate(-360deg) ;
+    }
+
+}
+@keyframes pluto{
+    from{
+        transform: rotate(0deg) translate(525px);
+    }
+    to{
+        transform: rotate(360deg) translate(525px) ;
+    }
+}
+@keyframes plutop{
+    from{
+        transform: rotate(0deg) translate(525px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(525px) rotate(-360deg);
+    }
+}
+
